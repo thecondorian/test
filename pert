@@ -1,0 +1,44 @@
+graph LR
+C[Comunicação]
+R[Levantamento de Requisitos]
+M[Modelagem]
+A[Aquisição de Recursos]
+I[Implantação]
+T[Planejamento e execução de Testes]
+D[Documentação]
+C --> M
+C --> R
+R --> M
+M --> A
+A --> I
+I --> T
+T --> D
+M1[20]
+R1[40]
+M2[50]
+A1[30]
+I1[70]
+T1[80]
+D1[50]
+M1 --> M2
+R1 --> M2
+R1 --> C1(( ))
+C1 --> C2(( ))
+C2 --> C3(( ))
+M2 --> A1
+C3 --> A1
+A1 --> I1
+I1 --> T1
+T1 --> D1
+classDef default fill:#fff,stroke:#333,stroke-width:2px;
+classDef a fill:#8cc7b5,stroke:#333,stroke-width:2px;
+class C,R,M,A,I,T,D a;
+class M1,R1,M2,A1,I1,T1,D1 default;
+C1, C2, C3 class a;
+C["Comunicação (20)"]
+R["Levantamento de Requisitos (40)"]
+M["Modelagem (50)"]
+A["Aquisição de Recursos (30)"]
+I["Implantação (70)"]
+T["Planejamento e execução de Testes (80)"]
+D["Documentação (50)"]
